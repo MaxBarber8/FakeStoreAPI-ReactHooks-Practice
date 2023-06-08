@@ -20,6 +20,7 @@ function Products() {
         <div className="products">
             <img src={productData.image} width={200} />
             <h3> Title : {productData.title} </h3>
+            <h2> Description : {productData.description} </h2>
         </div>
     )
     
