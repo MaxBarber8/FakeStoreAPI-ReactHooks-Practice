@@ -6,10 +6,12 @@ import Products from './pages/products.jsx'
 function App() {
   return(
     <BrowserRouter>
+
     <Routes>
       <Route path='/' element={ <Home />}/>
       <Route path='/products/:id' element={<Products />} />
     </Routes>
+
     </BrowserRouter>
   )
 }

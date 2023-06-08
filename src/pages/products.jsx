@@ -7,8 +7,9 @@ function Products() {
 
     useEffect(() => {
         fetch('https://fakestoreapi.com/products/' + params.id)
-        .then(res=>res.json())
-        .then(json=>setProductData(json))
+        .then(res => res.json())
+        .then(json => setProductData(json))
+        .catch(error => console.log('Error:', error));
     },[]);
 
     if(productData === undefined){
@@ -22,8 +23,6 @@ function Products() {
         </div>
     )
     
-
-
 }
 
 export default Products;
